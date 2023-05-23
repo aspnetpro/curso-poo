@@ -1,10 +1,11 @@
 # Curso Programação Orientada a Objetos em C#
 
 * Inscrição: [Inscreva-se Aqui](https://lp.cursosdeaspnet.com.br/curso-poo-csharp-online-gratuito)
+* Instrutor: [Michel Banagouro](https://www.linkedin.com/in/mbanagouro/)
 * Data: 17, 24 e 31 de Maio de 2023
 * Horário: 20h
-* Local: [Canal do Youtube Cursos ASP.NET](https://www.youtube.com/@cursosaspnet)
-* Instrutor: [Michel Banagouro](https://www.linkedin.com/in/mbanagouro/)
+* Local: [Canal Youtube - Cursos ASP.NET](https://www.youtube.com/@cursosaspnet)
+* Grupo Exclusivo: [Canal Telegram - Cursos ASP.NET](https://t.me/+lb125hIwpbY4Y2Ex)
 
 ## DIA 01
 
