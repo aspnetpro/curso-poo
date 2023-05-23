@@ -8,6 +8,8 @@
 
 ## DIA 01
 
+Link: https://www.youtube.com/watch?v=tHDZnz7Jplc
+
 * OS 4 Pilares da OOP
   * Abstração
   * Encapsulamento
@@ -26,6 +28,8 @@
 
 ## DIA 02
 
+Link: disponível após dia 24/05/2023
+
 * Interfaces
 * Classe Abstrata
 * Classe Selada
@@ -34,6 +38,8 @@
 * Covariância e Contravariância
 
 ## DIA 03
+
+Link: disponível após dia 31/05/2023
 
 * Design Patterns
   * Creational
