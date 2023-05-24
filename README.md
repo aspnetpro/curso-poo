@@ -36,7 +36,6 @@ Link: disponível após dia 24/05/2023
 * Classe Selada
 * Sobreescrita de métodos: override e new
 * Conversões (Implícita x Explícitas)
-* Covariância e Contravariância
 
 ## DIA 03
 
