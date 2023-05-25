@@ -1,4 +1,6 @@
-﻿namespace CursoPOO;
+﻿using CursoPOO.Pagamento;
+
+namespace CursoPOO;
 
 public class Cesta
 {
@@ -12,6 +14,8 @@ public class Cesta
     public int TotalItens => _itens.Sum(x => x.Quantidade);
 
     public decimal ValorTotal => _itens.Sum(x => x.Total);
+
+    public string ValorTotalFormatado => ValorTotal.ToString("C");
 
     public void AdicionarItem(Item item) 
     {
@@ -28,8 +32,20 @@ public class Cesta
         _itens.Remove(item);
     }
 
+    public override string ToString()
+    {
+        return $"Qtd Itens: {TotalItens} | Total: {ValorTotalFormatado}";
+    }
+
+    //public void Pagar(IPagamento pagamento)
+    //{
+    //    pagamento.Processar(this);
+    //}
+
     public Cesta()
     {
         _itens = new List<Item>();
     }
 }
+
+

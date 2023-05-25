@@ -54,8 +54,13 @@ public class Item
     public Item(string nome, decimal preco, int quantidade)
     {
         Nome = nome;
-        _preco = preco;
-        _quantidade = quantidade;
+        Preco = preco;
+        Quantidade = quantidade;
+    }
+
+    public override string ToString()
+    {
+        return $"Item: {Nome.PadRight(35, ' ')} | Qtd {Quantidade} | Preço Total: {TotalFormatado}";
     }
 
     public static Item CriarBola()
