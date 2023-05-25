@@ -29,7 +29,7 @@ Link: https://www.youtube.com/watch?v=tHDZnz7Jplc
 
 ## DIA 02
 
-Link: disponível após dia 24/05/2023
+Link: https://www.youtube.com/watch?v=J4xDugSlnWc
 
 * Interfaces
 * Classe Abstrata
