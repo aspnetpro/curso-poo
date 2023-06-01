@@ -39,7 +39,7 @@ Link: https://www.youtube.com/watch?v=J4xDugSlnWc
 
 ## DIA 03
 
-Link: disponível após dia 31/05/2023
+Link: https://www.youtube.com/watch?v=oaQ0n8ADyfI
 
 * Design Patterns
   * Creational
