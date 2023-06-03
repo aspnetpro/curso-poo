@@ -14,6 +14,10 @@ public class Configuracao
         get { return _config = (_config ?? new Configuracao()); }
     }
 
-    //public static Configuracao Instancia 
+    //public static Configuracao Instancia
     //    => _config = (_config ?? new Configuracao());
+
+    public bool LoginAtivo { get; set; }
+    
+    public bool CadastroOffline { get; set; }
 }

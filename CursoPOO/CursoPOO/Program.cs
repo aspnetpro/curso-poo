@@ -1,4 +1,5 @@
 ﻿using CursoPOO;
+using CursoPOO.DesignPatterns.Criacional;
 using CursoPOO.Frete;
 using CursoPOO.Frete.Impl;
 using CursoPOO.Pagamento;
@@ -6,8 +7,14 @@ using CursoPOO.Pagamento;
 //Class1 obj = new Class1();
 //Console.WriteLine(obj.ToString());
 
+//if (Configuracao.Instancia.LoginAtivo)
+//{
+//    // executar a operaçao de login
+//}
+
 // Criando uma instancia da classe Cesta
 Cesta minhaCesta = new Cesta();
+
 
 // Criando uma instancia da classe Item
 Item bola = new Item("Bola de futebol", 89.90M, 1);
@@ -27,11 +34,18 @@ foreach(Item item in minhaCesta.Itens)
 }
 Console.WriteLine(minhaCesta);
 
-ICalcularFrete calcularFrete = new CalcularFreteCorreiosPAC();
-var opcaoFrete = calcularFrete.Calcular(minhaCesta);
-if(opcaoFrete != null)
+CalcularFreteCorreios calcularFrete = SelecionarFrete.Informar();
+if( calcularFrete != null )
 {
-    Console.WriteLine($"Frete selecionado: {opcaoFrete.Nome}");
+    var opcaoFrete = calcularFrete.Calcular(minhaCesta);
+    if (opcaoFrete != null)
+    {
+        Console.WriteLine($"Frete selecionado: {opcaoFrete.Nome}");
+    }
+    else
+    {
+        Console.WriteLine($"Frete não informado");
+    }
 }
 
 IPagamento pagamento = SelecionarPagamento.Informar();
@@ -39,6 +53,7 @@ pagamento.Processar(minhaCesta);
 
 // break
 Console.ReadLine();
+
 
 
 

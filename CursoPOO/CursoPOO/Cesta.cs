@@ -37,10 +37,10 @@ public class Cesta
         return $"Qtd Itens: {TotalItens} | Total: {ValorTotalFormatado}";
     }
 
-    //public void Pagar(IPagamento pagamento)
-    //{
-    //    pagamento.Processar(this);
-    //}
+    public void Pagar(IPagamento pagamento)
+    {
+        pagamento.Processar(this);
+    }
 
     public Cesta()
     {

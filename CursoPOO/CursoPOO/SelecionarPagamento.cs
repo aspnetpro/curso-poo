@@ -1,4 +1,5 @@
-﻿using CursoPOO.Pagamento;
+﻿using CursoPOO.DesignPatterns.Estrutural;
+using CursoPOO.Pagamento;
 using CursoPOO.Pagamento.Impl;
 
 namespace CursoPOO;
@@ -19,6 +20,9 @@ public class SelecionarPagamento
                 return new PagamentoCartaoCredito();
             case "PIX":
                 return new PagamentoPix();
+            case "TRANSFERENCIA":
+                var pagtoTransf = new PagamentoTransferencia();
+                return new PagamentoTransferenciaAdapter(pagtoTransf);
             default:
                 return new PagamentoNaoRealizado();
         }
